@@ -1,0 +1,52 @@
+,Disease,SVM,SSL,DNN
+0,Anisakis,0,0,0
+1,Ascaris,0,0,0
+2,Brucellosis,1,0,1
+3,Buruliulcer,0,0,0
+4,Chagas disease,0,0,0
+5,Chikungunya,1,0,0
+6,Chlamydia Infection,0,0,0
+7,Coccidioidomycosis,0,0,0
+8,Congo-Crimean HF,0,0,0
+9,Coxsackie Infection,1,0,0
+10,CreutzfeldtJakobDisease,0,0,0
+11,Cytomegalovirus,0,0,0
+12,Dracunculus,0,0,0
+13,Echinococcus,0,0,0
+14,Enterobiasis,1,0,0
+15,Fasciola,0,0,0
+16,Fasciolopsiasis,0,0,0
+17,Giardiasis,0,0,0
+18,HendraVirus,0,0,0
+19,Herpes Zoster,1,0,1
+20,Hookworm,0,0,0
+21,Hymenolepsis,0,0,0
+22,Kaposis Sarcoma,0,0,0
+23,Lassa Fever,0,0,0
+24,Leishmaniasis,0,0,0
+25,Leptospirosis,1,0,0
+26,Listeriosis,0,0,0
+27,Lujo,0,0,0
+28,Lyme disease,1,0,1
+29,Lymphogranuloma,0,0,0
+30,NDM-1,0,0,0
+31,NipahVirus,0,0,0
+32,Onchocerciasis,0,0,0
+33,Rabies,1,1,1
+34,Rickettsiosis,0,0,0
+35,Roseolo virus,0,0,0
+36,Rubella,1,0,1
+37,Saxitoxin Poisoning,0,0,0
+38,Scabies,0,0,1
+39,SchmallenbergVirus,0,0,0
+40,Sleeping Sickness,0,0,0
+41,Strongyloidiasis,0,0,0
+42,Syphilis,1,1,1
+43,Toxoplasma,0,0,0
+44,Trachoma,0,0,0
+45,Trichinella,0,0,0
+46,Trichomoniasis,1,0,0
+47,Trichuris,0,0,0
+48,Tularemia,0,0,0
+49,Visceral Leishmaniasis,0,0,0
+50,Yaws,0,0,0

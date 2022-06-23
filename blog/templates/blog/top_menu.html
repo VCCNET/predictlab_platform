@@ -8,6 +8,12 @@
         <meta name="generator" content="Hugo 0.88.1">
         <title>Predictlab Platform</title>
 
+        <link rel="stylesheet" href="/static/assets/vendor/animate/animate.css">
+        <link rel="stylesheet" href="/static/assets/css/bootstrap.css">
+        <link rel="stylesheet" href="/static/assets/css/maicons.css">
+        <link rel="stylesheet" href="/staticassets/vendor/owl-carousel/css/owl.carousel.css">
+        <link rel="stylesheet" href="/static/assets/css/theme.css">
+
         <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/headers/">
 
 
@@ -78,18 +84,19 @@
                                     <div class="container">
                                         <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 g-1">
                                             <div class="col">
-                                                <li><a class="dropdown-item" href="#">감염병 분석</a></li>
+                                                <li><a class="dropdown-item" href="/">감염병 분석 홈</a></li>
                                                 <li><hr class="dropdown-divider"></li>
-                                                <li><a class="dropdown-item" href="#">글로벌 감염병 유입 위험도</a></li>
-                                                <li><a class="dropdown-item" href="#">SARS-CoV-2 서열 분석</a></li>
-                                                <li><a class="dropdown-item" href="#">SARS-CoV-2 키워드 분석</a></li>
+                                                <li><a class="dropdown-item" href="{% url 'drw_info' %}">글로벌 감염병 유입 위험도</a></li>
+                                                <li><a class="dropdown-item" href="{% url 'seq_analyze' %}">SARS-CoV-2 서열 분석</a></li>
+                                                <li><a class="dropdown-item" href="{% url 'bert' %}">BERT 활용 키워드 분석</a></li>
+                                                <li><a class="dropdown-item" href="{% url 'dengue' %}">Dengue 예측 분석</a></li>
 
                                             </div>
                                         </div>
                                     </div>
                                 </ul>
                             </li>
-                            <li><a href="#" class="nav-link px-2 link-dark">플랫폼 소개</a></li>
+                            <!--<li><a href="#" class="nav-link px-2 link-dark">플랫폼 소개</a></li>-->
                         </ul>
 <!--
                         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
@@ -345,166 +352,6 @@
                             </div>
 
                         </div>
-
-                        <script>
-
-                        {% if error %}
-                            document.getElementById("LoginModal").style.display = "block";
-                        {% endif %}
-
-                        {% if pswdmoderror %}
-                            document.getElementById("pswdmodModal").style.display = "block";
-                        {% endif %}
-
-                        // Get the Signup modal
-                        var Signupmodal = document.getElementById("SignupModal");
-
-                        // Get the button that opens the modal
-                        var signupbtn = document.getElementById("signup");
-
-                        // Get the <span> element that closes the modal
-                        var signupspan = document.getElementById("signupclose");
-
-                        // When the user clicks the button, open the modal
-                        signupbtn.onclick = function() {
-                          Signupmodal.style.display = "block";
-                        }
-
-                        // When the user clicks on <span> (x), close the modal
-                        signupspan.onclick = function() {
-                          Signupmodal.style.display = "none";
-                        }
-
-
-                        // Get the Signup2 modal
-                        var Signup2modal = document.getElementById("Signup2Modal");
-
-                        // Get the button that opens the modal
-                        var signup2btn = document.getElementById("signup2");
-
-                        // Get the <span> element that closes the modal
-                        var signup2span = document.getElementById("signup2close");
-
-                        // When the user clicks the button, open the modal
-                        signup2btn.onclick = function() {
-                          Signupmodal.style.display = "none";
-                          Signup2modal.style.display = "block";
-                        }
-
-                        // When the user clicks on <span> (x), close the modal
-                        signup2span.onclick = function() {
-                          Signupmodal.style.display = "none";
-                          Signup2modal.style.display = "none";
-                        }
-
-
-                        // Get the Login modal
-                        var Loginmodal = document.getElementById("LoginModal");
-
-                        // Get the button that opens the modal
-                        var btn = document.getElementById("login");
-
-                        // Get the <span> element that closes the modal
-                        var loginspan = document.getElementById("loginclose");
-
-                        // When the user clicks the button, open the modal
-                        btn.onclick = function() {
-                          Loginmodal.style.display = "block";
-                        }
-
-                        // When the user clicks on <span> (x), close the modal
-                        loginspan.onclick = function() {
-                          Loginmodal.style.display = "none";
-                        }
-
-
-                        // Get the Pswdmod modal
-                        var Pswdmodmodal = document.getElementById("pswdmodModal");
-
-                        // Get the button that opens the modal
-                        var Pswdmodbtn = document.getElementById("Pswdmod");
-
-                        // Get the <span> element that closes the modal
-                        var Pswdmodspan = document.getElementById("pswdmodclose");
-
-                        // When the user clicks the button, open the modal
-                        Pswdmodbtn.onclick = function() {
-                          Loginmodal.style.display = "none";
-                          Pswdmodmodal.style.display = "block";
-                        }
-
-                        // When the user clicks on <span> (x), close the modal
-                        Pswdmodspan.onclick = function() {
-                          Loginmodal.style.display = "none";
-                          Pswdmodmodal.style.display = "none";
-                        }
-
-                        // When the user clicks anywhere outside of the modal, close it
-                        window.onclick = function(event) {
-                          if (event.target == Signupmodal) {
-                            Signupmodal.style.display = "none";
-                          }
-                          if (event.target == Signup2modal) {
-                            Signupmodal.style.display = "none";
-                            Signup2modal.style.display = "none";
-                          }
-                          if (event.target == Loginmodal) {
-                            Loginmodal.style.display = "none";
-                          }
-                          if (event.target == pswdmodModal) {
-                            Loginmodal.style.display = "none";
-                            Pswdmodmodal.style.display = "none";
-                          }
-                        }
-
-
-                        function validate() {
-                            var regExp = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
-                            var email = document.getElementById('username');
-                            var checkbox2 = document.getElementById('flexCheckDefault');
-
-                            if(!check(regExp, email, "잘못된 이메일 양식입니다.")) {
-                                return false;
-                            }
-
-                            if(checkbox2.checked == false) {
-                                alert("회원가입약관의 내용에 동의해 주세요.");
-                                return false;
-                            }
-                        }
-
-                       function check(re, what, message) {
-                           if(re.test(what.value)) {
-                               return true;
-                           }
-                           alert(message);
-                           what.value = "";
-                           what.focus();
-                           //return false;
-                       }
-
-
-                        function pswdmod() {
-                            var regExp = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
-                            var email = document.getElementById('pswdmodusername');
-
-                            if(!pswdmodcheck(regExp, email, "이메일 주소를 확인해주세요.")) {
-                                return false;
-                            }
-                        }
-
-                       function pswdmodcheck(re, what, message) {
-                           if(re.test(what.value)) {
-                               return true;
-                           }
-                           alert(message);
-                           what.value = "";
-                           what.focus();
-                           //return false;
-                       }
-
-                        </script>
-
                         {% endif %}
                     </div>
                 </div>
