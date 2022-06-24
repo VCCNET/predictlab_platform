@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5da3f3a3-2066-4470-a686-bc61d12c9095" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/blog/templates/blog/bert.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/templates/blog/bert_graph.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/templates/blog/bert_info.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/templates/blog/bert_report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/templates/blog/dengue.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/templates/blog/dengue_report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/templates/blog/seq_analyze_tables.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/post_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/post_main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/top_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/top_menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -229,7 +218,7 @@
   <component name="ToolWindowManager">
     <frame x="4298" y="-566" width="1702" height="1415" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19750148" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19750148" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -240,8 +229,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49924812" weight="0.32953683" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49849623" weight="0.32953683" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49924812" weight="0.32953683" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50075185" side_tool="true" weight="0.32953683" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4985128" visible="true" weight="0.32953683" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5014872" side_tool="true" weight="0.32953683" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -418,16 +407,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="574" column="45" selection-start-line="574" selection-start-column="45" selection-end-line="574" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/templates/blog/disease_risk_weight_disease.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -503,6 +482,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="38" column="10" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1725">
+          <caret line="574" column="45" selection-start-line="574" selection-start-column="45" selection-end-line="574" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
